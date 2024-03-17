@@ -16,6 +16,7 @@ Welcome to the Medium Clone project! This project aims to replicate the function
 
 ```sh
 git clone <repository_url>
+```sh
 
 cd medium-clone
 npm install
