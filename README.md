@@ -16,14 +16,23 @@ Welcome to the Medium Clone project! This project aims to replicate the function
 
 ```sh
 git clone <repository_url>
-```sh
+```
 
+```sh
 cd medium-clone
 npm install
+```
 
+```sh
 DATABASE_URL=your_postgres_database_url
 JWT_SECRET=your_jwt_secret
+```
 
+```sh
 wrangler dev
+```
 
+```sh
 npm start
+```
+
