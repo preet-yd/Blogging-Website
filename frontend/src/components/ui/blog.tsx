@@ -3,16 +3,18 @@ import { Button } from "@/components/ui/button"
 import { Link } from "react-router-dom"
 
 interface BlogProps {
+  id: string,
   author: string,
   title: string;
   content: string,
   publishDate: string,
 }
-export function Blog({ author, title, content, publishDate }: BlogProps) {
+export function Blog({id, author, title, content, publishDate }: BlogProps) {
 
 
   return (
-    <Link className="group p-4 rounded-lg border-b hover:shadow-card transform transition-transform" to={""}>
+    console.log(id),
+    <Link className="group p-4 rounded-lg border-b hover:shadow-card transform transition-transform" to={`/blog/${id}`}>
 
       <div className="space-y-2">
         <p className="text-sm font-medium tracking-wide uppercase text-gray-500 dark:text-gray-400">Article</p>

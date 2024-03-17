@@ -8,12 +8,14 @@ import MediumLogo from "../images/Medium_(website)_logo.svg"
 import { useState } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
-export function Edit() {
+export function Publish() {
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
+  const navigate = useNavigate();
+
   return (
-    
     <div className="w-full max-w-3xl mx-auto pt-10 px-4">
       <img src={MediumLogo} className=" w-36 p-3"></img>
       <div className="space-y-6">
@@ -56,7 +58,7 @@ export function Edit() {
         </div>
         <div className="flex justify-end items-center space-x-4">
           <Link to={"/home"}>
-            Back to drafts
+            Back to home
           </Link>
           <Button onClick={
             async () => {
@@ -69,6 +71,7 @@ export function Edit() {
                 }
               })
               console.log(response)
+              navigate('/home')
             }
           } size="lg">Publish</Button>
         </div>
