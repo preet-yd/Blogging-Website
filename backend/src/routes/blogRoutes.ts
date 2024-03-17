@@ -100,7 +100,7 @@ blogRouter.get('/bulk', async (c) => {
   catch(e){
     console.log(e)
     c.status(404)
-    return c.json({msg : "could find all the blogs"})
+    return c.json({msg : "couldn't find all the blogs"})
   }
 
   
@@ -113,15 +113,24 @@ blogRouter.get('/:id', async (c) => {
 
   const params = c.req.param('id')
   try {
-    const body = await c.req.json()
-    const blog = await prisma.post.findFirst({
+    const blog = await prisma.post.findUnique({
       where: {
         id: params
+      },
+      select: {
+        title : true,
+        content : true,
+        author : {
+          select : {
+            name : true
+          }
+        }
       }
     })
     return c.json({ blog })
   }
   catch (e) {
+    console.error({"error is" : e})
     c.status(411)
     return c.json({ msg: "some error occured while getting the blog" })
   }
