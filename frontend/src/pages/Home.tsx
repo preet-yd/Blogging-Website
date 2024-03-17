@@ -4,9 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Link } from "react-router-dom"
 import MediumLogo from "../images/Medium_(website)_logo.svg"
-import { useEffect, useId, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios"
-import { BACKEND_URL } from "./config"
 
 export function Home() {
   // const id = useId()
