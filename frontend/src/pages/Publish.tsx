@@ -57,7 +57,7 @@ export function Publish() {
           </div>
         </div>
         <div className="flex justify-end items-center space-x-4">
-          <Link to={"/home"}>
+          <Link to={"/"}>
             Back to home
           </Link>
           <Button onClick={
@@ -71,7 +71,7 @@ export function Publish() {
                 }
               })
               console.log(response)
-              navigate('/home')
+              navigate('/')
             }
           } size="lg">Publish</Button>
         </div>

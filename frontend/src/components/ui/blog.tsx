@@ -12,7 +12,6 @@ export function Blog({id, author, title, content, publishDate }: BlogProps) {
 
 
   return (
-    console.log(id),
     <Link className="group p-4 rounded-lg border-b hover:shadow-card transform transition-transform" to={`/blog/${id}`}>
 
       <div className="space-y-2">

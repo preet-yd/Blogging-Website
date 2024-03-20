@@ -56,7 +56,7 @@ export function Home() {
         <div className="space-y-4">
           <div className="grid md:grid-cols-1 md:gap-4">
             {blogs.map((blog: any) => {
-              return <Blog id={blog.id} author={blog.author.name} title={blog.title} content={blog.content} publishDate={blog.publishDate} />
+              return <Blog key={blog.id} id={blog.id} author={blog.author.name} title={blog.title} content={blog.content} publishDate={blog.publishDate} />
             })}
             {/* <Blog author="Preet" title="6 Legit Apps To Make Truly Passive Income By Having Your Computer Turned On." content="Discover how to earn passive income by simply leaving your computer running. Here are six methods that can help you monetize your idle computer time." publishDate="20 nov" />
             <Blog author="Preet" title="A Definitive Guide to Using BigQuery Efficiently" content="Make the most out of your BigQuery usage, burn data rather than money to create real value with some practical techniques. — · 📝 Introduction · 💎 BigQuery basics and understanding costs ∘ Storage ∘ " publishDate="20 nov" />

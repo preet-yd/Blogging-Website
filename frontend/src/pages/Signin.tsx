@@ -35,7 +35,7 @@ export function Signin() {
     console.log(e)
     alert('something went wrong')
   }
-  navigate('/Home')
+  navigate('/')
 
 }
 

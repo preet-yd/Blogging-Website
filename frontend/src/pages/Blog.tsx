@@ -37,7 +37,7 @@ export function Blog() {
     <div className="flex flex-col min-h-screen">
       <header className="flex justify-between p-4 ">
         <img src={MediumLogo} className="flex justify-start w-36 "></img>
-        <Link className="px-4 py-2 text-white bg-green-500 rounded" to={"/home"}>
+        <Link className="px-4 py-2 text-white bg-green-500 rounded" to={"/"}>
           Back
         </Link>
       </header>
