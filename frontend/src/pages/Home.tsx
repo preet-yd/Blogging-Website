@@ -16,7 +16,6 @@ export function Home() {
   useEffect(() => {
 
     const fetchBlogs = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 5000))
       try {
         const response = await axios.get(`https://backend.preet-yadav266.workers.dev/api/v1/blog/bulk`, {
           headers: {
