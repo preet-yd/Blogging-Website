@@ -5,6 +5,7 @@ import { Home } from './pages/Home'
 import { Publish } from './pages/Publish'
 import {Blog} from './pages/Blog'
 import Protected from './pages/Protected'
+import Loader from './components/ui/BlogSkelton'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/signup" element={<Protected Component={Signin} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/blog/:id" element={<Blog />} />
+          <Route path="/loader" element={<Loader />} />
           <Route path="/" element={<Protected Component={Home}/>} />
           <Route path="/publish" element={<Protected Component={Publish}/>} />
         </Routes>

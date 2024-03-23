@@ -3,10 +3,10 @@
  * @see https://v0.dev/t/VqEnc9kBs3y
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/Label"
+import { Input } from "@/components/ui/Input"
 import { Link } from "react-router-dom"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/Button"
 import { useState } from "react"
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';

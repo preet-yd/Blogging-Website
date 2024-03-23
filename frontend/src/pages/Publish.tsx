@@ -3,7 +3,7 @@
  * @see https://v0.dev/t/D7YfmCbEmDu
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/Button"
 import MediumLogo from "../images/Medium_(website)_logo.svg"
 import { useState } from "react"
 import axios from "axios"
