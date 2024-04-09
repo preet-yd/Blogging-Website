@@ -1,4 +1,4 @@
-# Medium Clone Project
+# A Blogging Website
 
 Welcome to the Medium Clone project! This project aims to replicate the functionality of Medium using the following stack:
 
