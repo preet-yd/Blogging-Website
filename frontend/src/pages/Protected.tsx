@@ -7,7 +7,7 @@ function Protected({Component}: {Component: React.ComponentType}) {
 
     useEffect(() => {
         if (!localStorage.getItem('token')) {
-            navigate('/signup')
+            navigate('/signin')
         }
         
     }, [])

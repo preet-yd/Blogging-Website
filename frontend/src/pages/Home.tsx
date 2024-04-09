@@ -16,6 +16,7 @@ export function Home() {
   useEffect(() => {
 
     const fetchBlogs = async () => {
+
       try {
         const response = await axios.get(`https://backend.preet-yadav266.workers.dev/api/v1/blog/bulk`, {
           headers: {
