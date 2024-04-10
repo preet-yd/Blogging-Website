@@ -67,7 +67,7 @@ export function Signup() {
         <div className="mx-auto w-[350px] space-y-6">
           <div className="space-y-2 text-center">
             <h1 className="text-3xl font-bold">Sign up</h1>
-            <p className="text-gray-500 dark:text-gray-400">Enter your email below to signin to your account</p>
+            <p className="text-gray-500 dark:text-gray-400">Enter your email below to signup to your account</p>
           </div>
           <div className="space-y-4">
 
